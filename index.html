@@ -20,6 +20,7 @@
             <a href="#skills">Tech Stack</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Ventures</a>
+            <a href="#contact">Contact</a>
         </div>
         <button id="theme-btn"><i class="fas fa-adjust"></i></button>
     </nav>
@@ -60,7 +61,7 @@
                     <h2><span class="highlight">01.</span> Executive Summary</h2>
                 </div>
                 <div class="bento-card text-block">
-                    <p>I am an Analytical Data Analyst blending a background in Electronics & Communication Engineering with advanced data visualization skills. I specialize in translating complex datasets into actionable strategic insights using Python, SQL, and Power BI.</p>
+                    <p>I am an Data Analyst blending a background in Electronics & Communication Engineering with advanced data visualization skills. I specialize in translating complex datasets into actionable strategic insights using Python, SQL, and Power BI.</p>
                     <p>Currently, I am expanding my technical horizons by learning <strong>Luau</strong> to architect a Cultivation/Sect-Building Simulation game on Roblox, merging my passion for city-building mechanics and cultivation literature with functional game development.</p>
                 </div>
             </section>
@@ -224,10 +225,51 @@
                     
                     <div class="academic-metrics">
                         <div class="metric"><i class="fas fa-laptop-code"></i> Minor in Computer Science</div>
-                        <div class="metric"><i class="fas fa-star"></i> Credits Earned: 200/180</div>
-                        <div class="metric"><i class="fas fa-id-card"></i> Enrollment: 02113202821</div>
+                        <div class="metric"><i class="fas fa-star"></i> Credits Earned: 200/200</div>
                         <div class="metric"><i class="fas fa-calendar-check"></i> Graduated: May 2025</div>
                     </div>
+                </div>
+            </section>
+
+            <section id="contact" class="fade-in-up">
+                <div class="section-header">
+                    <h2><span class="highlight">06.</span> Get In Touch</h2>
+                </div>
+                <div class="bento-card">
+                    <p style="color: var(--text-muted); margin-bottom: 25px;">Have a question or opportunity? I'd love to hear from you. Feel free to reach out!</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-success" id="successMessage">
+                            <i class="fas fa-check-circle"></i> Thanks for reaching out! I'll get back to you soon.
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                            <span class="form-error" id="nameError">Please enter your name</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            <span class="form-error" id="emailError">Please enter a valid email</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                            <span class="form-error" id="subjectError">Please enter a subject</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+                            <span class="form-error" id="messageError">Please enter a message (min. 10 characters)</span>
+                        </div>
+
+                        <button type="submit" class="form-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
                 </div>
             </section>
 
